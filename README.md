@@ -3,7 +3,7 @@ Program that can recognize handwritten multi-digit numbers.
 
 To perform this, i followed the following steps:  
 -Given an image of multi-digits numbers, I find the contours of the image thanks to traditionnal computer vision techniques.  
--I perform a DBSCAN clustering to detect wether the differetn digits are from the same number or not.  
+-I perform a DBSCAN clustering to detect wether the differetn digits are from the same number or not. The epsilon for DBSCAN is adapted to the dimension and the position of digits in the image.     
 -Thanks to a CNN trained on NIST dataset (more noise than MNIST), i classify each digit.  
 -At last, I reconstruct the numbers.  
 
